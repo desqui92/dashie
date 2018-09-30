@@ -6,6 +6,9 @@
 },
   "description": "",
   "main": "index.js",
+  "engines": {
+  "node": "8.12.0"
+},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
