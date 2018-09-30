@@ -1,6 +1,9 @@
 {
   "name": "DashieNazi",
   "version": "1.0.0",
+  "engines": {
+  "node": "8.12.0"
+},
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -18,6 +21,7 @@
     "fs": "0.0.1-security",
     "get-youtube-id": "^1.0.0",
     "node-opus": "^0.3.0",
+    "node-pre-gyp": "^0.11.0",
     "opusscript": "0.0.6",
     "request": "^2.88.0",
     "swf-reader": "^1.0.0",
