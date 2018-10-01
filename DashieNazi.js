@@ -487,7 +487,8 @@ async function lol(nombresito, channel){
 //430573773390086164
 client.on("message", (message) => {
   // If the message is "what is my avatar"
-    let miembro = member.user.id(303687426734555136);
+    let miembro = client.users.get(ch => ch.name === '⎛⎝___Desqui___⎠⎞').id;
+ channel = message.guild.channels.find(ch => ch.name === '🎹-composiciones-🎹');
   if (message.content.startsWith("holoe")) {
     // Send the user's avatar URL
   kick.miembro();
