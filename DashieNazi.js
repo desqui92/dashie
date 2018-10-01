@@ -12,10 +12,9 @@ const getYouTubeID= require("get-youtube-id");
 const fetchVideoInfo = require("youtube-info");
 var config = JSON.parse(fs.readFileSync('./settings.json', 'utf-8'));
 const servers = {};
-const yt_api_key = config.key;
-const bot_cntroller = config.bot_controller;
+const yt_api_key = process.env.KEY;
+const bot_cntroller = process.env.BOT_CONTROLLER;
 const prefix = config.prefix;
-const discord_token = config.discord_token;
 var guilds = {};
 var queue = [];
 var isPlaying = false;
@@ -31,7 +30,7 @@ EventEmitter.defaultMaxListeners = 1000;
 var emitter = new MyEmitter();
 //emitter.setMaxListeners(40);
 
-client.login(discord_token);
+client.login(process.env.BOT_TOKEN);
 
 //lel
 
