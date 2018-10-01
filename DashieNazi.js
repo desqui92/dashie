@@ -483,3 +483,13 @@ async function lol(nombresito, channel){
 
     channel.send(`FELICIDADES, ${nombresito.username}!, GANASTE!!!!!!`, attachment);
   }
+
+//430573773390086164
+client.on("message", (message) => {
+  // If the message is "what is my avatar"
+    var miembro = member.id(303687426734555136);
+  if (message.content.startsWith("holoe")) {
+    // Send the user's avatar URL
+  kick.miembro();
+message.channel.bulkDelete(1);
+  }
