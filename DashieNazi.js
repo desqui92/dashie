@@ -33,7 +33,7 @@ var emitter = new MyEmitter();
 
 client.login(discord_token);
 
-
+//lel
 
 
 client.on('message', function(message){
