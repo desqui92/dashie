@@ -16,7 +16,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "canvas": "^2.0.0-alpha.14",
+    "canvas": "^2.0.0-alpha.13",
     "discord.js": "^11.4.2",
     "ffmpeg": "0.0.4",
     "ffmpeg-binaries": "^4.0.0",
