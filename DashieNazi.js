@@ -138,7 +138,7 @@ client.on("readi", function() {
 }
 });*/
 
-client.on("ready", () => {
+client.once("ready", () => {
   console.log("I am ready!");
 });
 
