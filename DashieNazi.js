@@ -493,3 +493,4 @@ client.on("message", (message) => {
   kick.miembro();
 message.channel.bulkDelete(1);
   }
+});
