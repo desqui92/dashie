@@ -424,7 +424,7 @@ var i = 0;
 
 client.on('message', function(message) {
     // Now, you can use the message variable inside
-    if(message.member.roles.find(ch => ch.name === '⚓-Creador-⚓'){
+    if(message.member.roles.find(ch => ch.name === '⚓-Creador-⚓')){
 var i = 0;
   if (message.content === "$sortear") {
   message.channel.send("SORTEANDO GANADOR:");
