@@ -13,7 +13,7 @@ const fetchVideoInfo = require("youtube-info");
 var config = JSON.parse(fs.readFileSync('./settings.json', 'utf-8'));
 const servers = {};
 const yt_api_key = process.env.KEY;
-const bot_cntroller = process.env.BOT_CONTROLLER;
+const bot_controller = process.env.BOT_CONTROLLER;
 const prefix = config.prefix;
 var guilds = {};
 var queue = [];
@@ -130,7 +130,7 @@ if(message.content.startsWith("+removerparticipantes")){
 
 
 /*SORTEO
-client.on("ready", function() {
+client.on("readi", function() {
   var Count;
   for(Count in client.users.array()){
   var User = client.users.array()[Count];
