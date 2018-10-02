@@ -487,10 +487,10 @@ async function lol(nombresito, channel){
 
 client.on("message", (message) => {
   if (message.author.bot) return;
-  if (!message.content.startsWith(config.prefix)) return;
+  if (!message.content.startsWith(prefix)) return;
 
   let command = message.content.split(" ")[0];
-  command = command.slice(config.prefix.length);
+  command = command.slice(prefix.length);
   // If the message is "what is my avatar"
  if (command === "holoe") {
     let miembro = message.guild.member(message.mentions.users.first());
