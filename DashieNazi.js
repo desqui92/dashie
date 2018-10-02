@@ -484,10 +484,10 @@ async function lol(nombresito, channel){
     channel.send(`FELICIDADES, ${nombresito.username}!, GANASTE!!!!!!`, attachment);
   }
 
-//430573773390086164
+
 client.on("message", (message) => {
   // If the message is "what is my avatar"
-    let miembro = client.users.get(ch => ch.name === '⎛⎝___Desqui___⎠⎞').id;
+    let miembro = message.mentions.users.first();
  channel = message.guild.channels.find(ch => ch.name === '🎹-composiciones-🎹');
   if (message.content.startsWith("holoe")) {
     // Send the user's avatar URL
