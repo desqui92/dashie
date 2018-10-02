@@ -486,13 +486,10 @@ async function lol(nombresito, channel){
 
 
 client.on("message", (message) => {
-  if (message.author.bot) return;
-  if (!message.content.startsWith(prefix)) return;
-
-  let command = message.content.split(" ")[0];
-  command = command.slice(prefix.length);
-let args = message.content.split(" ").slice(1);
- if (command === "holoe") {
+  let command = message.content.split(" ");
+  let comande = command[0];
+let args = comande.slice(1);
+ if (comande === 'holoe') {
     let miembro = message.guild.member(message.mentions.users.first());
  channel = message.guild.channels.find(ch => ch.name === '🎹-composiciones-🎹');
 
