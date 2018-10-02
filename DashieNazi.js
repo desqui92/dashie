@@ -491,12 +491,12 @@ client.on("message", (message) => {
 
   let command = message.content.split(" ")[0];
   command = command.slice(prefix.length);
-  // If the message is "what is my avatar"
+let args = message.content.split(" ").slice(1);
  if (command === "holoe") {
     let miembro = message.guild.member(message.mentions.users.first());
  channel = message.guild.channels.find(ch => ch.name === '🎹-composiciones-🎹');
-    // Send the user's avatar URL
-  kick.miembro();
+
+  message.guild.member(miembro).kick();
 message.channel.bulkDelete(1);
   }
 });
