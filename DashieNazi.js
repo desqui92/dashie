@@ -493,7 +493,7 @@ let args = comande.slice(1);
     let miembro = message.guild.member(message.mentions.users.first());
  channel = message.guild.channels.find(ch => ch.name === '🎹-composiciones-🎹');
 
-  message.guild.member(miembro).kick();
+  message.guild.member(miembro).kick('lul');
 message.channel.bulkDelete(1);
   }
 });
