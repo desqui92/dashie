@@ -486,10 +486,15 @@ async function lol(nombresito, channel){
 
 
 client.on("message", (message) => {
+  if (message.author.bot) return;
+  if (!message.content.startsWith(config.prefix)) return;
+
+  let command = message.content.split(" ")[0];
+  command = command.slice(config.prefix.length);
   // If the message is "what is my avatar"
-    let miembro = message.mentions.users.first();
+ if (command === "holoe") {
+    let miembro = message.guild.member(message.mentions.users.first());
  channel = message.guild.channels.find(ch => ch.name === '🎹-composiciones-🎹');
-  if (message.content.startsWith("holoe")) {
     // Send the user's avatar URL
   kick.miembro();
 message.channel.bulkDelete(1);
