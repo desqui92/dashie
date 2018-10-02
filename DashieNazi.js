@@ -497,3 +497,21 @@ let args = comande.slice(1);
 message.channel.bulkDelete(1);
   }
 });
+
+
+client.on("message", (message) => {  
+var voiceChannel = message.member.voiceChannel;
+ var i = 0;  
+if (message.content.startsWith("+bug")) {
+var intervalo = setInterval (function(){
+  i++
+    voiceChannel.join();
+setTimeout(function(){ 
+    voiceChannel.leave();
+}, 1000);
+  if(i === 100){
+     clearInterval(intervalo);
+}
+}, 1 * 1000);
+}
+});
