@@ -567,7 +567,7 @@ lol(nombresito, channel, dx, dy).then();
   if(i === 100){
      clearInterval(intervalo);
 }
-}, 1 * 1000);
+}, 1 * 2000);
 
 }
 
@@ -595,8 +595,4 @@ async function lol(nombresito, channel, dx, dy){
 
 const attachment = new Discord.Attachment(canvas.toBuffer(), 'welcome-image.png');
 channel.send(attachment);
-  
-setTimeout(function(){
-channel.send(attachment);
-  }, 1000);
 }
