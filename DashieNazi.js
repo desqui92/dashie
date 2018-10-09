@@ -529,7 +529,7 @@ var arriba = "false";
   if (message.content === "$jugar") {
   message.channel.send("INICIANDO JUEGO:");
 var intervalo = setInterval (function(){
-  channel = message.guild.channels.find(ch => ch.name === 'general');
+  channel = message.guild.channels.find(ch => ch.name === '🤖-comandos-🤖');
 if(izquierda === "true"){
 dx -=20;
 } else if(izquierda === "false"){
