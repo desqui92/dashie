@@ -529,13 +529,13 @@ var arriba = "false";
   if (message.content === "$jugar") {
   message.channel.send("INICIANDO JUEGO:");
 let membersWithRole = message.guild.members.filter(member => {
-        return member.roles.find(ch => ch.name === 'Participantes');
+        return member.roles.find(ch => ch.name === '🍀-Participantes-🍀');
     }).map(member => {
         return member.user;
     })
 var intervalo = setInterval (function(){
   nombresito = membersWithRole[Math.floor(Math.random() * membersWithRole.length)];
-  channel = message.guild.channels.find(ch => ch.name === 'general');
+  channel = message.guild.channels.find(ch => ch.name === '🎹-composiciones-🎹');
 if(izquierda === "true"){
 dx -=20;
 } else if(izquierda === "false"){
