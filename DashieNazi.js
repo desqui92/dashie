@@ -521,21 +521,15 @@ setTimeout(function(){
 
 client.on('message', function(message) {
     // Now, you can use the message variable inside
-var i = 0;
 var dx= 0;
+var i = 0;
 var dy= 0;
 var izquierda = "false";
 var arriba = "false";
   if (message.content === "$jugar") {
   message.channel.send("INICIANDO JUEGO:");
-let membersWithRole = message.guild.members.filter(member => {
-        return member.roles.find(ch => ch.name === '🍀-Participantes-🍀');
-    }).map(member => {
-        return member.user;
-    })
 var intervalo = setInterval (function(){
-  nombresito = membersWithRole[Math.floor(Math.random() * membersWithRole.length)];
-  channel = message.guild.channels.find(ch => ch.name === '🎹-composiciones-🎹');
+  channel = message.guild.channels.find(ch => ch.name === 'general');
 if(izquierda === "true"){
 dx -=20;
 } else if(izquierda === "false"){
@@ -558,38 +552,34 @@ if(dy === 20){
 if(dy === -380){
   arriba = "true";
 }
-message.channel.bulkDelete(1)
-lol(nombresito, channel, dx, dy).then();
 
+ message.channel.bulkDelete(1);
+lol(channel, dx, dy).then();
+i++;
 
-
-  i++;
   if(i === 100){
      clearInterval(intervalo);
 }
 }, 1 * 1000);
-
 }
-
 });
 
-async function lol(nombresito, channel, dx, dy){
+
+async function lol(channel, dx, dy){
   const canvas = Canvas.createCanvas(400, 400);
   const ctx = canvas.getContext('2d');
    var x = 0;
    var y = 0;
-
   var opo = canvas.width/2;
    var apa = canvas.height-20;
     // Slightly smaller text placed above the member's display name
 
      x = x + dx + opo;
      y = y + dy + apa;
-    var ballRadius = 12;
-    ctx.beginPath();
-    ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
-    ctx.stroke();
 
-const attachment = new Discord.Attachment(canvas.toBuffer(), 'welcome-image.png');
+const c = await Canvas.loadImage('./c.jpg');
+  ctx.drawImage(c, x, y, c.width, c.height);
+
+const attachment = new Discord.Attachment(canvas.toBuffer('image/png', {quality: 0.5}), 'welcome-image.png');
 channel.send(attachment);
 }
