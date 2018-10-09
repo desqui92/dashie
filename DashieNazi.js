@@ -588,10 +588,7 @@ async function lol(nombresito, channel, dx, dy){
     var ballRadius = 12;
     ctx.beginPath();
     ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
-    ctx.fillStyle = "#0095DD";
-    ctx.fill();
-    ctx.closePath();
-    ctx.clip();
+    ctx.stroke();
 
 const attachment = new Discord.Attachment(canvas.toBuffer(), 'welcome-image.png');
 channel.send(attachment);
