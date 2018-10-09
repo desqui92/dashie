@@ -567,7 +567,7 @@ lol(nombresito, channel, dx, dy).then();
   if(i === 100){
      clearInterval(intervalo);
 }
-}, 1 * 2000);
+}, 1 * 1000);
 
 }
 
