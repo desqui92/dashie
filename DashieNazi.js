@@ -558,7 +558,8 @@ if(dy === 20){
 if(dy === -380){
   arriba = "true";
 }
-lol(nombresito, channel, dx, dy).then(message.channel.bulkDelete(1));
+message.channel.bulkDelete(1)
+lol(nombresito, channel, dx, dy).then();
 
 
 
