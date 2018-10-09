@@ -39,7 +39,7 @@ client.on('message', function(message){
   const member = message.member;
   const mess = message.content.toLowerCase();
   const args = message.content.split(' ').slice(1).join(" ");
-  if(mess.startsWith(prefix + "reproducir")){
+  if(mess.startsWith(prefix + "play")){
     if(message.member.voiceChannel || member.voiceChannel){
     if(queue.length > 0 || isPlaying){
       getID(args, function(id){
@@ -63,7 +63,7 @@ client.on('message', function(message){
   }else{
     message.reply("Tenes que estar en un canal de voz");
   }
-  }else if(mess.startsWith(prefix + "saltear")){
+  }else if(mess.startsWith(prefix + "saltar")){
     if(skippers.indexOf(message.author.id) === -1 ){
       skippers.push(message.author.id);
       skipReq++;
