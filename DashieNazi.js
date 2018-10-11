@@ -275,10 +275,7 @@ client.on("message", (message) => {
 client.on("message", (message) => {
   var voiceChannel = message.member.voiceChannel;
   if (message.content.startsWith("+sorpresa")) {
-    message.channel.send("Los voy a matar de la risa!!", {
-        file: "https://i.ytimg.com/vi/e1UwQI2UdZs/maxresdefault.jpg"
-    });
-    voiceChannel.join().then(connection =>{const dispatcher = connection.playFile('./desquiciado.mp3'); dispatcher.on("end", end => {voiceChannel.leave();});}).catch(err => console.log(err));
+    voiceChannel.join().then(connection =>{const dispatcher = connection.playFile('./axelo.wav'); dispatcher.on("end", end => {voiceChannel.leave();});}).catch(err => console.log(err));
 }
 });
 
