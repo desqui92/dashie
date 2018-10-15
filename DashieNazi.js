@@ -580,3 +580,75 @@ const c = await Canvas.loadImage('./c.jpg');
 const attachment = new Discord.Attachment(canvas.toBuffer('image/png', {quality: 0.5}), 'welcome-image.png');
 channel.send(attachment);
 }
+
+
+
+
+client.on("message", (message) => {
+if(message.member.roles.find((ch => ch.name === '⚓️-Creador-⚓️'))){
+var letraa = client.emojis.find(ch => ch.name === 'a_');
+var letrab = client.emojis.find(ch => ch.name === 'b_');
+var letrac = client.emojis.find(ch => ch.name === 'c_');
+var letrad = client.emojis.find(ch => ch.name === 'd_');
+var letrae = client.emojis.find(ch => ch.name === 'e_');
+var letraf = client.emojis.find(ch => ch.name === 'f_');
+var letrag = client.emojis.find(ch => ch.name === 'g_');
+var letrah = client.emojis.find(ch => ch.name === 'h_');
+var letrai = client.emojis.find(ch => ch.name === 'i_');
+var letraj = client.emojis.find(ch => ch.name === 'j_');
+var letrak = client.emojis.find(ch => ch.name === 'k_');
+var letral = client.emojis.find(ch => ch.name === 'l_');
+var letram = client.emojis.find(ch => ch.name === 'm_');
+var letran = client.emojis.find(ch => ch.name === 'n_');
+var letrao = client.emojis.find(ch => ch.name === 'o_');
+var letrap = client.emojis.find(ch => ch.name === 'p_');
+var letraq = client.emojis.find(ch => ch.name === 'q_');
+var letrar = client.emojis.find(ch => ch.name === 'r_');
+var letras = client.emojis.find(ch => ch.name === 's_');
+var letrat = client.emojis.find(ch => ch.name === 't_');
+var letrau = client.emojis.find(ch => ch.name === 'u_');
+var letrav = client.emojis.find(ch => ch.name === 'v_');
+var letraw = client.emojis.find(ch => ch.name === 'w_');
+var letrax = client.emojis.find(ch => ch.name === 'x_');
+var letray = client.emojis.find(ch => ch.name === 'y_');
+var letraz = client.emojis.find(ch => ch.name === 'z_');
+var letrero = message.guild.emojis.get("501293872484188170");
+  var voiceChannel = message.member.voiceChannel;
+  if (message.content.startsWith("°")) {
+message.channel.bulkDelete(1);
+var i = 0;    
+var agarrar = message.content;
+   var agarrer = (agarrar.match(/.{1}/g));
+   var letras = agarrar.length;
+agarrar = agarrar.replace(/°/g, "");
+agarrar = agarrar.replace(/a/g, letraa);
+agarrar = agarrar.replace(/b/g, letrab);
+agarrar = agarrar.replace(/c/g, letrac);
+agarrar = agarrar.replace(/d/g, letrad);
+agarrar = agarrar.replace(/e/g, letrae);
+agarrar = agarrar.replace(/f/g, letraf);
+agarrar = agarrar.replace(/g/g, letrag);
+agarrar = agarrar.replace(/h/g, letrah);
+agarrar = agarrar.replace(/i/g, letrai);
+agarrar = agarrar.replace(/j/g, letraj);
+agarrar = agarrar.replace(/k/g, letrak);
+agarrar = agarrar.replace(/l/g, letraa);
+agarrar = agarrar.replace(/m/g, letrab);
+agarrar = agarrar.replace(/n/g, letrac);
+agarrar = agarrar.replace(/o/g, letrad);
+agarrar = agarrar.replace(/p/g, letrae);
+agarrar = agarrar.replace(/q/g, letraf);
+agarrar = agarrar.replace(/r/g, letrag);
+agarrar = agarrar.replace(/s/g, letrah);
+agarrar = agarrar.replace(/t/g, letrai);
+agarrar = agarrar.replace(/u/g, letraj);
+agarrar = agarrar.replace(/v/g, letrak);
+agarrar = agarrar.replace(/w/g, letrah);
+agarrar = agarrar.replace(/x/g, letrai);
+agarrar = agarrar.replace(/y/g, letraj);
+agarrar = agarrar.replace(/z/g, letrak);
+var agarreru = agarrar;
+    message.channel.send(`${agarreru} .`); 
+    }
+}
+});
