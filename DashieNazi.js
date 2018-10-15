@@ -247,7 +247,7 @@ switch (args[0].toLowerCase()){
 });
 */
 
-
+/*
 client.on("message", (message) => {
 if(message.member.roles.find((ch => ch.name === '📜-Moderador-📜'))){
 if (message.content.startsWith(prefix + "axelenladuchahd")) {
@@ -257,7 +257,7 @@ message.channel.send("some text", {
 }
 }
 });
-
+*/
 
 client.on("message", (message) => {
 if (message.content.startsWith(prefix + "parar")) {
@@ -265,20 +265,23 @@ if (message.content.startsWith(prefix + "parar")) {
   if(message.guild.voiceConnection) message.guild.voiceConnection.disconnect();
 }
 });
-
+/*
 client.on("message", (message) => {
   if (message.content.startsWith("hacemeunhuevofrito")) {
     message.channel.send("Y porque no te haces una teta al hornou!");
   }
 });
-
+*/
+/*
 client.on("message", (message) => {
   var voiceChannel = message.member.voiceChannel;
   if (message.content.startsWith("+sorpresa")) {
     voiceChannel.join().then(connection =>{const dispatcher = connection.playFile('./axelon.wav'); dispatcher.on("end", end => {voiceChannel.leave();});}).catch(err => console.log(err));
 }
 });
+*/
 
+/*
 client.on("message", (message) => {
   // If the message is "what is my avatar"
   if (message.content.startsWith("cualesmiavatar")) {
@@ -286,6 +289,8 @@ client.on("message", (message) => {
     message.channel.send(author.avatarURL);
   }
 });
+
+*/
 client.on('message', message =>{
   if(message.author.bot) return undefined;
   let msg = message.content.toLowerCase();
@@ -369,7 +374,7 @@ client.on("message", msg => {
         clear();
     }
 });
-
+/*
 client.on("message", msg => {
     if(msg.guild.roles.find((ch => ch.name === 'Administrador'))){
     if (msg.content.toLowerCase().startsWith(prefix + "borrarchut")) {
@@ -383,7 +388,7 @@ client.on("message", msg => {
   }
 });
 
-
+*/
     //if(msg.member.permissions.has('ADMINISTRATOR')){
 
 /*client.on("message", message=> {
@@ -481,7 +486,7 @@ async function lol(nombresito, channel){
     channel.send(`FELICIDADES, ${nombresito.username}!, GANASTE!!!!!!`, attachment);
   }
 
-
+/*
 client.on("message", (message) => {
   let command = message.content.split(" ");
   let comande = command[0];
@@ -494,8 +499,9 @@ let args = comande.slice(1);
 message.channel.bulkDelete(1);
   }
 });
+*/
 
-
+/*
 client.on("message", (message) => {  
 var voiceChannel = message.member.voiceChannel;
  var i = 0;  
@@ -512,9 +518,9 @@ setTimeout(function(){
 }, 1 * 1000);
 }
 });
+*/
 
-
-
+/*
 
 client.on('message', function(message) {
     // Now, you can use the message variable inside
@@ -581,7 +587,7 @@ const attachment = new Discord.Attachment(canvas.toBuffer('image/png', {quality:
 channel.send(attachment);
 }
 
-
+*/
 
 
 client.on("message", (message) => {
