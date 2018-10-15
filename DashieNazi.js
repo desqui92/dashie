@@ -585,7 +585,7 @@ channel.send(attachment);
 
 
 client.on("message", (message) => {
-if(message.member.roles.find((ch => ch.name === '⚓️-Creador-⚓️'))){
+/* if(message.member.roles.find((ch => ch.name === '⚓️-Creador-⚓️'))){ */
 var letraa = client.emojis.find(ch => ch.name === 'a_');
 var letrab = client.emojis.find(ch => ch.name === 'b_');
 var letrac = client.emojis.find(ch => ch.name === 'c_');
@@ -677,5 +677,5 @@ agarrar = agarrar.replace(/Z/g, letraz);
 var agarreru = agarrar;
     message.channel.send(`${agarreru} .`); 
     }
-}
+/*}*/
 });
