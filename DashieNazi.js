@@ -335,8 +335,8 @@ client.on('guildMemberAdd', async member => {
     const background = await Canvas.loadImage('./wallpaper.jpg');
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
-    ctx.strokeStyle = '#74037b';
-    ctx.strokeRect(300, 0, canvas.width, canvas.height);
+    //ctx.strokeStyle = '#74037b';
+    //ctx.strokeRect(300, 0, canvas.width, canvas.height);
 
     // Slightly smaller text placed above the member's display name
     ctx.font = '28px sans-serif';
