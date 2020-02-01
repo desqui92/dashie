@@ -343,9 +343,9 @@ client.on('guildMemberAdd', async member => {
     //ctx.fillText('Welcome to the server,', canvas.width / 2.5, canvas.height / 3.5);
 
     // Add an exclamation point here and below
-    ctx.font = "34px Georgia";
+    ctx.font = "40px Georgia";
     ctx.fillStyle = '#ff0000';
-    ctx.fillText(`${member.displayName}`, canvas.width/4.5, canvas.height / 1.8);
+    ctx.fillText(`${member.displayName}`, canvas.width/5, canvas.height / 1.8);
 
     ctx.beginPath();
     ctx.arc(320, 140, 65, 0, 2 * Math.PI, true);
