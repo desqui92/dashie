@@ -346,7 +346,7 @@ client.on('guildMemberAdd', async member => {
     // Add an exclamation point here and below
     ctx.font = applyText(canvas, `${member.displayName}!`);
     ctx.fillStyle = '#ffffff';
-    ctx.fillText(`${member.displayName}!`, canvas.width / 5, canvas.height / 1.8);
+    ctx.fillText(`${member.displayName}!`, canvas.width / 5.5, canvas.height / 1.8);
 
     ctx.beginPath();
     ctx.arc(320, 140, 65, 0, 2 * Math.PI, true);
@@ -357,7 +357,7 @@ client.on('guildMemberAdd', async member => {
 
     const { body: buffer } = await snekfetch.get(member.user.displayAvatarURL);
     const avatar = await Canvas.loadImage(buffer);
-    ctx.drawImage(avatar, 240, 60, 120, 120);
+    ctx.drawImage(avatar, 250, 70, 120, 120);
 
     const attachment = new Discord.Attachment(canvas.toBuffer(), 'welcome-image.png');
 
