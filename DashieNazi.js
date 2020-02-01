@@ -349,7 +349,7 @@ client.on('guildMemberAdd', async member => {
     ctx.fillText(`${member.displayName}!`, canvas.width / 2.5, canvas.height / 1.8);
 
     ctx.beginPath();
-    ctx.arc(220, 150, 100, 0, 2 * Math.PI, true);
+    ctx.arc(330, 120, 90, 0, 2 * Math.PI, true);
     //ctx.rect(20,20,200,200);
     //ctx.arc(125, 125, 100, 0, Math.PI * 2, true);
     ctx.closePath();
@@ -357,7 +357,7 @@ client.on('guildMemberAdd', async member => {
 
     const { body: buffer } = await snekfetch.get(member.user.displayAvatarURL);
     const avatar = await Canvas.loadImage(buffer);
-    ctx.drawImage(avatar, 220, 150, 200, 200);
+    ctx.drawImage(avatar, 330, 120, 200, 200);
 
     const attachment = new Discord.Attachment(canvas.toBuffer(), 'welcome-image.png');
 
