@@ -349,7 +349,7 @@ client.on('guildMemberAdd', async member => {
     ctx.fillText(`${member.displayName}!`, canvas.width / 2.5, canvas.height / 1.8);
 
     ctx.beginPath();
-    ctx.arc(324, 137, 150, 150, 2 * Math.PI);
+    ctx.arc(24, 100, 150, 150, 2 * Math.PI);
     //ctx.rect(20,20,200,200);
     //ctx.arc(125, 125, 100, 0, Math.PI * 2, true);
     ctx.closePath();
