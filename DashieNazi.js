@@ -1,4 +1,4 @@
-﻿const Discord = require("discord.js");
+const Discord = require("discord.js");
 const Canvas = require("canvas");
 const ffmpeg = require('ffmpeg')
 const opusscript = require('opusscript');
@@ -357,7 +357,7 @@ client.on('guildMemberAdd', async member => {
 
     const { body: buffer } = await snekfetch.get(member.user.displayAvatarURL);
     const avatar = await Canvas.loadImage(buffer);
-    ctx.drawImage(avatar, 160, -50, 200, 200);
+    ctx.drawImage(avatar, 160, 50, 200, 200);
 
     const attachment = new Discord.Attachment(canvas.toBuffer(), 'welcome-image.png');
 
