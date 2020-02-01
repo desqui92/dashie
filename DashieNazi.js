@@ -360,7 +360,7 @@ client.on('guildMemberAdd', async member => {
 
     const attachment = new Discord.Attachment(canvas.toBuffer(), 'welcome-image.png');
 
-    channel.send(`Welcome to the server, ${member}!`, attachment);
+    channel.send(`Bienvenido/a al servidor, ${member}!`, attachment);
 });
 
 
