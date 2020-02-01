@@ -341,12 +341,12 @@ client.on('guildMemberAdd', async member => {
     // Slightly smaller text placed above the member's display name
     ctx.font = '28px sans-serif';
     ctx.fillStyle = '#ffffff';
-    ctx.fillText('Welcome to the server,', canvas.width / 2.5, canvas.height / 3.5);
+    //ctx.fillText('Welcome to the server,', canvas.width / 2.5, canvas.height / 3.5);
 
     // Add an exclamation point here and below
     ctx.font = applyText(canvas, `${member.displayName}!`);
     ctx.fillStyle = '#ffffff';
-    ctx.fillText(`${member.displayName}!`, canvas.width / 2.5, canvas.height / 1.8);
+    ctx.fillText(`${member.displayName}!`, canvas.width / 4.5, canvas.height / 1.8);
 
     ctx.beginPath();
     ctx.arc(320, 140, 65, 0, 2 * Math.PI, true);
