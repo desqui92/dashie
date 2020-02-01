@@ -333,7 +333,7 @@ client.on('guildMemberAdd', async member => {
     const ctx = canvas.getContext('2d');
 
     const background = await Canvas.loadImage('./wallpaper.jpg');
-    ctx.drawImage(background, 90, 0, canvas.width, canvas.height);
+    ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
     //ctx.strokeStyle = '#74037b';
     //ctx.strokeRect(300, 0, canvas.width, canvas.height);
@@ -357,7 +357,7 @@ client.on('guildMemberAdd', async member => {
 
     const { body: buffer } = await snekfetch.get(member.user.displayAvatarURL);
     const avatar = await Canvas.loadImage(buffer);
-    ctx.drawImage(avatar, 0, 0, 200, 200);
+    ctx.drawImage(avatar, 90, 0, 200, 200);
 
     const attachment = new Discord.Attachment(canvas.toBuffer(), 'welcome-image.png');
 
