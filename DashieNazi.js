@@ -339,7 +339,7 @@ client.on('guildMemberAdd', async member => {
     //ctx.strokeRect(300, 0, canvas.width, canvas.height);
 
     // Slightly smaller text placed above the member's display name
-    ctx.font = '28px manicdepress';
+    ctx.font = '25px manicdepress red';
     ctx.fillStyle = '#ffffff';
     //ctx.fillText('Welcome to the server,', canvas.width / 2.5, canvas.height / 3.5);
 
@@ -357,7 +357,7 @@ client.on('guildMemberAdd', async member => {
 
     const { body: buffer } = await snekfetch.get(member.user.displayAvatarURL);
     const avatar = await Canvas.loadImage(buffer);
-    ctx.drawImage(avatar, 260, 80, 125, 125);
+    ctx.drawImage(avatar, 260, 80, 130, 130);
 
     const attachment = new Discord.Attachment(canvas.toBuffer(), 'welcome-image.png');
 
