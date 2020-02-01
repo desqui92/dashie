@@ -344,7 +344,7 @@ client.on('guildMemberAdd', async member => {
 
     // Add an exclamation point here and below
     //ctx.font = applyText(canvas, `${member.displayName}!`);
-    ctx.font = "32px";
+    ctx.font = "20px";
     ctx.fillStyle = '#ff0000';
     ctx.fillText(`${member.displayName}`, canvas.width/2.5, canvas.height / 1.8);
 
