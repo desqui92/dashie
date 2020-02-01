@@ -331,7 +331,7 @@ client.on('guildMemberAdd', async member => {
 
     const canvas = Canvas.createCanvas(1200, 472);
     const ctx = canvas.getContext('2d');
-
+    Canvas.registerFont('./manic-depressive.ttf', {family: 'manicdepress'});
     const background = await Canvas.loadImage('./wallpaper.jpg');
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
@@ -339,7 +339,7 @@ client.on('guildMemberAdd', async member => {
     //ctx.strokeRect(300, 0, canvas.width, canvas.height);
 
     // Slightly smaller text placed above the member's display name
-    ctx.font = '28px sans-serif';
+    ctx.font = '28px manicdepress';
     ctx.fillStyle = '#ffffff';
     //ctx.fillText('Welcome to the server,', canvas.width / 2.5, canvas.height / 3.5);
 
