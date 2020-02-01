@@ -333,7 +333,7 @@ client.on('guildMemberAdd', async member => {
     const ctx = canvas.getContext('2d');
 
     const background = await Canvas.loadImage('./wallpaper.jpg');
-    ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
+    ctx.drawImage(background, 90, 0, canvas.width, canvas.height);
 
     //ctx.strokeStyle = '#74037b';
     //ctx.strokeRect(300, 0, canvas.width, canvas.height);
