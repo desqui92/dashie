@@ -331,7 +331,6 @@ client.on('guildMemberAdd', async member => {
 
     const canvas = Canvas.createCanvas(1200, 472);
     const ctx = canvas.getContext('2d');
-    Canvas.registerFont('./manic-depressive.ttf', {family: 'manicdepress'});
     const background = await Canvas.loadImage('./wallpaper.jpg');
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
 
