@@ -357,7 +357,7 @@ client.on('guildMemberAdd', async member => {
 
     const { body: buffer } = await snekfetch.get(member.user.displayAvatarURL);
     const avatar = await Canvas.loadImage(buffer);
-    ctx.drawImage(avatar, 260, 80, 120, 120);
+    ctx.drawImage(avatar, 260, 80, 125, 125);
 
     const attachment = new Discord.Attachment(canvas.toBuffer(), 'welcome-image.png');
 
