@@ -347,7 +347,7 @@ client.on('guildMemberAdd', async member => {
     //ctx.font = applyText(canvas, `${member.displayName}!`);
     ctx.font = '24px manicdepress red';
     ctx.fillStyle = '#ffffff';
-    const vari = (canvas.width/5.5) - ((ctx.measureText(${member.displayName}).width)/2);
+    var vari = (canvas.width/5.5) - ((ctx.measureText(${member.displayName}).width)/2);
     ctx.fillText(`${member.displayName}`, vari, canvas.height / 1.8);
 
     ctx.beginPath();
