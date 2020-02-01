@@ -310,7 +310,7 @@ client.on('message', message =>{
 
 const applyText = (canvas, text) => {
     const ctx = canvas.getContext('2d');
-
+//hol
     // Declare a base size of the font
     let fontSize = 70;
 
