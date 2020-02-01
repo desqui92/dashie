@@ -329,7 +329,7 @@ client.on('guildMemberAdd', async member => {
   const channel = member.guild.channels.find(ch => ch.name === '🌌recepcion🌌');
     if (!channel) return;
 
-    const canvas = Canvas.createCanvas(1200, 472);
+    const canvas = Canvas.createCanvas(3600, 1416);
     const ctx = canvas.getContext('2d');
 
     const background = await Canvas.loadImage('./wallpaper.jpg');
