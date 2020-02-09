@@ -260,7 +260,7 @@ message.channel.send("some text", {
 */
 
 client.on("message", (message) => {
-if (message.content.startsWith(prefix + "parar")) {
+if (message.content.startsWith(prefix + "pararr")) {
   var server = servers[message.guild.id];
   if(message.guild.voiceConnection) message.guild.voiceConnection.disconnect();
 }
@@ -279,7 +279,12 @@ client.on("message", (message) => {
     voiceChannel.join().then(connection =>{const dispatcher = connection.playFile('./axelon.wav'); dispatcher.on("end", end => {voiceChannel.leave();});}).catch(err => console.log(err));
 }
 });
-
+client.on("message", (message) => {
+  var voiceChannel = message.member.voiceChannel;
+  if (message.content.startsWith("+parar")) {
+    voiceChannel.join().then(connection =>{const dispatcher = connection.playFile('./axelon.wav'); dispatcher.on("end", end => {voiceChannel.leave();});}).catch(err => console.log(err));
+}
+});
 
 /*
 client.on("message", (message) => {
