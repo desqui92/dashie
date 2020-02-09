@@ -275,7 +275,7 @@ client.on("message", (message) => {
 
 client.on("message", (message) => {
   var voiceChannel = message.member.voiceChannel;
-  if (message.content.startsWith("+sorpresa")) {
+  if (message.content.startsWith("+sorpresannn")) {
     voiceChannel.join().then(connection =>{const dispatcher = connection.playFile('./axelon.wav'); dispatcher.on("end", end => {voiceChannel.leave();});}).catch(err => console.log(err));
 }
 });
