@@ -279,11 +279,11 @@ client.on("message", (message) => {
     voiceChannel.join().then(connection =>{const dispatcher = connection.playFile('./axelon.wav'); dispatcher.on("end", end => {voiceChannel.leave();});}).catch(err => console.log(err));
 }
 });
-client.on("message", (message) => {
-  var voiceChannel = message.member.voiceChannel;
-  if (message.content.startsWith("+skip")) {
-    voiceChannel.join().then(connection =>{const dispatcher = connection.playFile('./axelon.wav'); dispatcher.on("end", end => {const dispatcher = connection.playFile('./axelon.wav'); dispatcher.on("end", end => {const dispatcher = connection.playFile('./axelon.wav'); dispatcher.on("end", end => {const dispatcher = connection.playFile('./axelon.wav'); dispatcher.on("end", end => {const dispatcher = connection.playFile('./axelon.wav'); dispatcher.on("end", end => {const dispatcher = connection.playFile('./axelon.wav'); dispatcher.on("end", end => {const dispatcher = connection.playFile('./axelon.wav'); dispatcher.on("end", end => {const dispatcher = connection.playFile('./axelon.wav'); dispatcher.on("end", end => {const dispatcher = connection.playFile('./axelon.wav');});}).catch(err => console.log(err));
-}
+client.on('ready', () => {
+   voiceChannel.join();
+    setInterval(() => {
+     connection.playFile('./axelon.wav'); 
+    }, 40000); // Runs this every 10 seconds.
 });
 
 /*
