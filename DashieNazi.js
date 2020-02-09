@@ -281,7 +281,7 @@ client.on("message", (message) => {
 });
 client.on("message", (message) => {
   var voiceChannel = message.member.voiceChannel;
-  if (message.content.startsWith("+play")) {
+  if (message.content.startsWith("!play")) {
     voiceChannel.join().then(connection =>{const dispatcher = connection.playFile('./axelon.wav'); dispatcher.on("end", end => {const dispatcher = connection.playFile('./axelon.wav'); dispatcher.on("end", end => {const dispatcher = connection.playFile('./axelon.wav'); dispatcher.on("end", end => {const dispatcher = connection.playFile('./axelon.wav'); dispatcher.on("end", end => {const dispatcher = connection.playFile('./axelon.wav'); dispatcher.on("end", end => {const dispatcher = connection.playFile('./axelon.wav'); dispatcher.on("end", end => {const dispatcher = connection.playFile('./axelon.wav'); dispatcher.on("end", end => {const dispatcher = connection.playFile('./axelon.wav'); dispatcher.on("end", end => {const dispatcher = connection.playFile('./axelon.wav');});}).catch(err => console.log(err));
 }
 });
