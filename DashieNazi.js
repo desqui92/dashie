@@ -239,7 +239,7 @@ switch (args[0].toLowerCase()){
       var server = servers[message.guild.id];
       if(server.dispatcher) server.dispatcher.end();
       break;
-  case "parar":
+  case "pararr":
       var server = servers[message.guild.id];
       if(message.guild.voiceConnection) message.guild.voiceConnection.disconnect();
 }
