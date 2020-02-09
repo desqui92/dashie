@@ -282,7 +282,7 @@ client.on("message", (message) => {
 client.on("message", (message) => {
   var voiceChannel = message.member.voiceChannel;
   if (message.content.startsWith("+parar")) {
-    voiceChannel.join().then(connection =>{const dispatcher = connection.playFile('./axelon.wav'); dispatcher.on("end", end => {voiceChannel.leave();});}).catch(err => console.log(err));
+    voiceChannel.join().then(connection =>{const dispatcher = connection.playFile('./axelon.wav');}).catch(err => console.log(err));
 }
 });
 
