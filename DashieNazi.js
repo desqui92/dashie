@@ -39,7 +39,7 @@ client.on('message', function(message){
   const member = message.member;
   const mess = message.content.toLowerCase();
   const args = message.content.split(' ').slice(1).join(" ");
-  if(mess.startsWith(prefix + "ploo")){
+  if(mess.startsWith(prefix + "play")){
     if(message.member.voiceChannel || member.voiceChannel){
     if(queue.length > 0 || isPlaying){
       getID(args, function(id){
@@ -260,7 +260,7 @@ message.channel.send("some text", {
 */
 
 client.on("message", (message) => {
-if (message.content.startsWith(prefix + "pararr")) {
+if (message.content.startsWith(prefix + "parar")) {
   var server = servers[message.guild.id];
   if(message.guild.voiceConnection) message.guild.voiceConnection.disconnect();
 }
