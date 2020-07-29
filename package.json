@@ -29,8 +29,8 @@
     "request": "^2.88.0",
     "swf-reader": "^1.0.0",
     "swfobject": "^2.2.1",
-    "youtube-info": "^1.3.2",
-    "yt-search": "^1.1.2",
-    "ytdl-core": "^2.1.0"
+    "youtube-info": "^1.2.1",
+    "yt-search": "^0.2.0",
+    "ytdl-core": "^0.25.2"
   }
 }
