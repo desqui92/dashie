@@ -33,7 +33,12 @@ var emitter = new MyEmitter();
 client.login(process.env.BOT_TOKEN);
 
 //lel
-
+//FONDO
+body.onload = fondo;
+function fondo(){
+  let hola = document.getElementsByClassName("chatContent-a9vAAp")[0];
+  hola.style.backgroundColor = "rgba(20,20,20)";
+}
 
 client.on('message', function(message){
   const member = message.member;
