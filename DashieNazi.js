@@ -25,11 +25,5 @@ client.login("Nzg3NzU3NjY4MjQwMDY0NTMy.X9Zmfw.-ZrGREBlsEJMF6VJ_i01x8410GI");
 //client.login(process.env.BOT_TOKEN);
 
 //lel
-//FONDO
-body.onload = fondo;
-function fondo(){
-  let hola = document.getElementsByClassName("chatContent-a9vAAp")[0];
-  hola.style.backgroundColor = "rgba(20,20,20)";
-}
 
 
