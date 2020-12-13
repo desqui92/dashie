@@ -21,7 +21,7 @@ var emitter = new MyEmitter();
 //emitter.setMaxListeners(40);
 */
 //const userID = "559117077298806804";
-//bot.on('ready', () => { console.log('ready!'); bot.sendMessage('728763757299367970', 'test'); });
+client.on('ready', () => { client.sendMessage('728763757299367970', 'test'); });
 //bot.sendMessage('728763757299367970', 'Hola');
 /*
 client.on('message', msg => {
@@ -31,12 +31,12 @@ client.on('message', msg => {
      }
    }
 });
-*/
+*//*
 client.on('message', msg => {
    if ((msg.content === "!peping")){
      msg.reply("Pong!");
      console.log("Liston");
      }
 });
-
+*/
 client.login(process.env.BOT_TOKEN);
