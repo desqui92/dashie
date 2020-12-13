@@ -21,11 +21,10 @@ var emitter = new MyEmitter();
 //emitter.setMaxListeners(40);
 */
 
-client.login(process.env.BOT_TOKEN);
-
 client.on('message', msg => { 
-   if (msg.content.startsWith(config.prefix + "ping")) {
+   if (msg.content === "!peping") {
      msg.reply("Pong!");
    }
 });
 
+client.login(process.env.BOT_TOKEN);
