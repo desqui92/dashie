@@ -23,23 +23,14 @@ var emitter = new MyEmitter();
 const userID = "559117077298806804";
 //client.on('ready', () => { client.sendMessage('728763757299367970', 'test'); });
 //bot.sendMessage('728763757299367970', 'Hola');
-client.on('message', async (message) => { 
-       try {
-	if(message.content.startsWith(`setNicknameRodrigoG`)){
-		let member = message.mentions.members.first();
-		member = await member.setNickname('>RodrigoG<');
-	}
-       } catch (e) {
-          console.error(e); // It's always useful to log your errors.
-       }
-});/*
+
 client.on('message', msg => {
    if(msg.author.id === userID){
-   if ((msg.content === "Te puedo hacer una pregunta?,")){
-     msg.reply("Beep Boop Beep, Dime!");
+   if ((msg.content === "namer")){
+     msg.guild.member(userID).setNickname('>RodrigoG<');
      }
    }
-});
+});/*
 client.on('message', msg => {
    if(msg.author.id === userID){
    if ((msg.content === "Si en un bosque hay un arbol, se cae y no hay nadie cerca. Mientras le parten un palo en la cabeza a axel. ¿Hace ruido?")){
