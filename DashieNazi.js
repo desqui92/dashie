@@ -23,7 +23,7 @@ var emitter = new MyEmitter();
 const userID = "559117077298806804";
 
 client.on('message', msg => {
-   if(message.author.id === userID){
+   if(msg.author.id === userID){
    if ((msg.content === "!peping")){
      msg.reply("Pong!");
      }
