@@ -1,16 +1,11 @@
 const Discord = require("discord.js");
-const opusscript = require('opusscript');
-const snekfetch = require("snekfetch");
 const client = new Discord.Client();
 const configu = require("./config.json");
 const request = require("request");
 const fs = require("fs");
-const getYouTubeID= require("get-youtube-id");
-const fetchVideoInfo = require("youtube-info");
 var config = JSON.parse(fs.readFileSync('./settings.json', 'utf-8'));
 const servers = {};
-const yt_api_key = process.env.KEY;
-const bot_controller = process.env.BOT_CONTROLLER;
+//const bot_controller = process.env.BOT_CONTROLLER;
 const prefix = config.prefix;
 var guilds = {};
 var queue = [];
