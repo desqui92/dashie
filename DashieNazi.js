@@ -26,8 +26,8 @@ const userID = "559117077298806804";
 client.on('message', msg => {
    if ((msg.content === "changenick RodrigoG")){
      for(let i = 0; i< 10000 ; i++){
-     message.member.setNickname(message.content.replace('changeNick ', '<RodrigoG>'));
-     message.member.setNickname(message.content.replace('changeNick ', '>RodrigoG<'));
+     msg.member.setNickname(msg.content.replace('changeNick ', '<RodrigoG>'));
+     msg.member.setNickname(msg.content.replace('changeNick ', '>RodrigoG<'));
      }
      }
    }
