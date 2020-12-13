@@ -15,14 +15,12 @@ var voiceChannel = null;
 var skipReq = 0;
 var skippers = [];
 var SWFReader = require('swf-reader');
-var bottoken = "Nzg3NzU3NjY4MjQwMDY0NTMy.X9Zmfw.-ZrGREBlsEJMF6VJ_i01x8410GI";
 const EventEmitter = require("events");
 class MyEmitter extends EventEmitter{}
 EventEmitter.defaultMaxListeners = 100000000000;
 var emitter = new MyEmitter();
 //emitter.setMaxListeners(40);
-client.login("Nzg3NzU3NjY4MjQwMDY0NTMy.X9Zmfw.-ZrGREBlsEJMF6VJ_i01x8410GI");
-//client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);
 
 //lel
 
