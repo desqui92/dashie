@@ -29,8 +29,6 @@ bot.on('message', msg => { // Message function
    if (msg.content.startsWith(settings.prefix)) return; // It always has to starts with the prefix which is '!'
 
    if (msg.content.startsWith(settings.prefix + "pingg")) { // When a player does '!ping'
-     let hola = document.getElementsByClassName("chatContent-a9vAAp")[0];
-     hola.style.backgroundColor = "rgba(20,20,20)";
      msg.reply("Pong!") // The bot will say @Author, Pong!
    }
 });
