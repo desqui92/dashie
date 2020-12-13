@@ -23,7 +23,7 @@ var emitter = new MyEmitter();
 const userID = "559117077298806804";
 //client.on('ready', () => { client.sendMessage('728763757299367970', 'test'); });
 //bot.sendMessage('728763757299367970', 'Hola');
-client.on('message', msg => {
+/*client.on('message', msg => {
    if(msg.author.id === userID){
    if ((msg.content === "Hola bot,")){
      msg.reply("Beep Boop Beep, Hola");
@@ -50,7 +50,7 @@ client.on('message', msg => {
      msg.reply("Beep Boop Beep, De nada!");
      }
    }
-});
+});*/
 /*
 client.on('message', msg => {
    if ((msg.content === "!peping")){
