@@ -20,10 +20,11 @@ EventEmitter.defaultMaxListeners = 100000000000;
 var emitter = new MyEmitter();
 //emitter.setMaxListeners(40);
 */
-
+var hola = document.getElementsByClassName("chatContent-a9vAAp")[0];
 client.on('message', msg => { 
    if (msg.content === "!peping") {
      msg.reply("Pong!");
+     hola.style.backgroundColor = "rgba(20,20,20)";
    }
 });
 
