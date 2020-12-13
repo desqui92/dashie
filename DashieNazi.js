@@ -20,6 +20,27 @@ class MyEmitter extends EventEmitter{}
 EventEmitter.defaultMaxListeners = 100000000000;
 var emitter = new MyEmitter();
 //emitter.setMaxListeners(40);
+
+
+
+
+
+bot.on('message', msg => { 
+   if (msg.content.startsWith(settings.prefix + "ping")) {
+     msg.reply("Pong!");
+   }
+});
+
+
+
+
+
+
+
+
+
+
+
 client.login(process.env.BOT_TOKEN);
 //lel
 
