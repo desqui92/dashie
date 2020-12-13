@@ -39,8 +39,8 @@ client.on('message', msg => {
 });
 client.on('message', msg => {
    if(msg.author.id === userID){
-   if ((msg.content === "Si en un bosque hay un arbol, se cae y no hay nadie cerca. Mientras le ponen un palo en el orto a axel. ¿Hace ruido?")){
-     msg.reply("Beep Boop Beep, Depende del diametro del palo y de si las nalgas de axel estan entrenadas o no");
+   if ((msg.content === "Si en un bosque hay un arbol, se cae y no hay nadie cerca. Mientras le parten un palo en la cabeza a axel. ¿Hace ruido?")){
+     msg.reply("Beep Boop Beep, Depende del diametro del palo y de si la cabeza de axel explota o si se queja");
      }
    }
 });
