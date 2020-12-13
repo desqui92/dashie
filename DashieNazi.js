@@ -22,7 +22,7 @@ var emitter = new MyEmitter();
 */
 
 client.on('message', msg => { 
-   if (msg.content.startsWith(settings.prefix + "ping")) {
+   if (msg.content.startsWith(config.prefix + "ping")) {
      msg.reply("Pong!");
    }
 });
