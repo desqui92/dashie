@@ -24,9 +24,13 @@ client.login(process.env.BOT_TOKEN);
 
 //lel
 
+bot.on('message', msg => { // Message function
+   if (msg.author.bot) return; // Ignore all bots
+   if (msg.content.startsWith(settings.prefix)) return; // It always has to starts with the prefix which is '!'
 
-body.onload = fondo;
-function fondo(){
-  let hola = document.getElementsByClassName("chatContent-a9vAAp")[0];
-  hola.style.backgroundColor = "rgba(20,20,20)";
-}
+   if (msg.content.startsWith(settings.prefix + "pingg")) { // When a player does '!ping'
+     let hola = document.getElementsByClassName("chatContent-a9vAAp")[0];
+     hola.style.backgroundColor = "rgba(20,20,20)";
+     msg.reply("Pong!") // The bot will say @Author, Pong!
+   }
+});
