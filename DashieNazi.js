@@ -20,7 +20,7 @@ class MyEmitter extends EventEmitter{}
 EventEmitter.defaultMaxListeners = 100000000000;
 var emitter = new MyEmitter();
 //emitter.setMaxListeners(40);
-
+client.login(process.env.BOT_TOKEN);
 //lel
 
 bot.on('message', msg => { // Message function
@@ -32,4 +32,4 @@ bot.on('message', msg => { // Message function
    }
 });
 
-client.login(process.env.BOT_TOKEN);
+
