@@ -23,12 +23,15 @@ var emitter = new MyEmitter();
 const userID = "559117077298806804";
 //client.on('ready', () => { client.sendMessage('728763757299367970', 'test'); });
 //bot.sendMessage('728763757299367970', 'Hola');
-client.on('message', msg => {
-   if (msg.content === "changenick RodrigoG"){
-     msg.member.setNickname('<RodrigoG>');
-     msg.member.setNickname('>RodrigoG<');
-     }
-   }
+client.on('message', async (message) => { 
+       try {
+	if(message.content.startsWith(`setNicknameRodrigoG`)){
+		let member = message.mentions.members.first();
+		member = await member.setNickname('>RodrigoG<');
+	}
+       } catch (e) {
+          console.error(e); // It's always useful to log your errors.
+       }
 });/*
 client.on('message', msg => {
    if(msg.author.id === userID){
