@@ -20,11 +20,11 @@ EventEmitter.defaultMaxListeners = 100000000000;
 var emitter = new MyEmitter();
 //emitter.setMaxListeners(40);
 */
-var mirolad =  message.guild.roles.find("name", "GOD");
+const userID = 559117077298806804;
 
-client.on('message', msg => { 
+client.on('message', msg => {
+   if(message.sender === userID){
    if ((msg.content === "!peping")){
-     if(message.member.roles.has(mirolad.id)) {
      msg.reply("Pong!");
      }
    }
