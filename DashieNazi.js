@@ -21,12 +21,11 @@ var emitter = new MyEmitter();
 //emitter.setMaxListeners(40);
 */
 var mirolad =  message.guild.roles.find("name", "GOD");
-var hola = document.getElementsByClassName("chatContent-a9vAAp")[0];
+
 client.on('message', msg => { 
    if ((msg.content === "!peping")){
      if(message.member.roles.has(mirolad.id)) {
      msg.reply("Pong!");
-     hola.style.backgroundColor = "rgba(20,20,20)";
      }
    }
 });
