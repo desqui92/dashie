@@ -22,7 +22,7 @@ var emitter = new MyEmitter();
 //emitter.setMaxListeners(40);
 
 
-
+client.login(process.env.BOT_TOKEN);
 
 
 bot.on('message', msg => { 
@@ -30,18 +30,3 @@ bot.on('message', msg => {
      msg.reply("Pong!");
    }
 });
-
-
-
-
-
-
-
-
-
-
-
-client.login(process.env.BOT_TOKEN);
-//lel
-
-
