@@ -25,7 +25,7 @@ var emitter = new MyEmitter();
 client.login(process.env.BOT_TOKEN);
 
 
-bot.on('message', msg => { 
+client.on('message', msg => { 
    if (msg.content.startsWith(settings.prefix + "ping")) {
      msg.reply("Pong!");
    }
