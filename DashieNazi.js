@@ -14,7 +14,6 @@ var dispatcher = null;
 var voiceChannel = null;
 var skipReq = 0;
 var skippers = [];
-var SWFReader = require('swf-reader');
 const EventEmitter = require("events");
 class MyEmitter extends EventEmitter{}
 EventEmitter.defaultMaxListeners = 100000000000;
