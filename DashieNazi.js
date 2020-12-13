@@ -21,17 +21,37 @@ var emitter = new MyEmitter();
 //emitter.setMaxListeners(40);
 */
 //const userID = "559117077298806804";
-client.on('ready', () => { client.sendMessage('728763757299367970', 'test'); });
+//client.on('ready', () => { client.sendMessage('728763757299367970', 'test'); });
 //bot.sendMessage('728763757299367970', 'Hola');
-/*
 client.on('message', msg => {
    if(msg.author.id === userID){
-   if ((msg.content === "!peping")){
-     msg.reply("Pong!");
+   if ((msg.content === "Hola bot,")){
+     msg.reply("Beep Boop Beep, Hola");
      }
    }
 });
-*//*
+client.on('message', msg => {
+   if(msg.author.id === userID){
+   if ((msg.content === "Te puedo hacer una pregunta?,")){
+     msg.reply("Beep Boop Beep, Dime!");
+     }
+   }
+});
+client.on('message', msg => {
+   if(msg.author.id === userID){
+   if ((msg.content === "Si en un bosque hay un arbol, se cae y no hay nadie cerca. Mientras le ponen un palo en el orto a axel. ¿Hace ruido?")){
+     msg.reply("Beep Boop Beep, Depende del diametro del palo y de si las nalgas de axel estan entrenadas o no");
+     }
+   }
+});
+client.on('message', msg => {
+   if(msg.author.id === userID){
+   if ((msg.content === "Gracias bot")){
+     msg.reply("Beep Boop Beep, De nada!");
+     }
+   }
+});
+/*
 client.on('message', msg => {
    if ((msg.content === "!peping")){
      msg.reply("Pong!");
